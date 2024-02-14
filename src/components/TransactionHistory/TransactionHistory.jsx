@@ -25,7 +25,7 @@ export const TransactionHistory = ({items}) => {
   </tbody>
 </table>
     )
-}
+} 
 
 export const TransItem = ({ type, amount, currency }) => {
     return (
