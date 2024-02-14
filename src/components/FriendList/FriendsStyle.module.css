@@ -4,7 +4,7 @@ margin: 0 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-   
+
 }
 
 .statusOn {
@@ -38,11 +38,13 @@ margin: 0 10px;
     height: 100%;
     border: 1px solid black;
     padding: 10px;
+    background: linear-gradient(#b5f1f5, #d7e5fe);
 }
 
 .friendList {
     list-style: none;
     margin-left: 0;
+  
 }
 
 .avatar {

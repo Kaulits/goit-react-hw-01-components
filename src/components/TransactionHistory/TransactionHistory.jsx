@@ -1,13 +1,13 @@
-
+import TransStyle from './TransStyle.module.css';
 
 export const TransactionHistory = ({items}) => {
     return (
-      <table class="transaction-history">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+        <table className={TransStyle.transactionHistory}>
+  <thead >
+    <tr className={TransStyle.tabTitle}>
+      <th className={TransStyle.titleItem}>Type</th>
+      <th className={TransStyle.titleItem}>Amount</th>
+      <th className={TransStyle.titleItem}>Currency</th>
     </tr>
   </thead>
 
@@ -29,10 +29,10 @@ export const TransactionHistory = ({items}) => {
 
 export const TransItem = ({ type, amount, currency }) => {
     return (
-         <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+         <tr className={TransStyle.list}>
+      <td className={TransStyle.item}>{type}</td>
+      <td className={TransStyle.item}>{amount}</td>
+      <td className={TransStyle.item}>{currency}</td>
     </tr>
     )
 }

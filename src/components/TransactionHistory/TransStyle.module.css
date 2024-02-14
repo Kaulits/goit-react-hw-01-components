@@ -1,0 +1,26 @@
+.transactionHistory {
+    table-layout: fixed;
+    width: 600px;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+.tabTitle {
+    background-color: rgb(112, 204, 235);
+    color: rgb(8, 106, 191);
+}
+
+.titleItem {
+    padding: 10px;
+    border: 1px solid rgba(0, 184, 208, 0.5);
+}
+
+.item {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 157, 209, 0.5);
+    color: rgb(5, 16, 36);
+}
+.list:nth-child(even) {
+    background-color: #dff8f8;
+}

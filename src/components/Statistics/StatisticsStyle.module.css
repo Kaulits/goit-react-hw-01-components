@@ -6,7 +6,7 @@
     margin-right: 0;
     margin-left: 0;
     padding: 0;
-    background-color: rgb(142, 242, 245);
+    background: linear-gradient(#a1f9ff, #d7dafe);
 }
 
 .title {
