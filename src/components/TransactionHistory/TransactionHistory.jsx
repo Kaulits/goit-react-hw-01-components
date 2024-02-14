@@ -26,7 +26,7 @@ export const TransactionHistory = ({items}) => {
 </table>
     )
 }  
-
+ 
 export const TransItem = ({ type, amount, currency }) => {
     return (
          <tr className={TransStyle.list}>
