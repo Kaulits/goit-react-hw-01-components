@@ -1,6 +1,6 @@
 
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({items}) => {
     return (
       <table class="transaction-history">
   <thead>
@@ -12,17 +12,27 @@ export const TransactionHistory = () => {
   </thead>
 
   <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
+                {items.map(item => {
+                    return (
+                        <TransItem
+                            key={item.id}
+                            type={item.type}
+                            amount={item.amount}
+                            currency={item.currency}
+                        />
+       )
+   })}
   </tbody>
 </table>
+    )
+}
+
+export const TransItem = ({ type, amount, currency }) => {
+    return (
+         <tr>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </tr>
     )
 }
