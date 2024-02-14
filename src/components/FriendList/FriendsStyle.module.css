@@ -16,7 +16,7 @@ margin: 0 10px;
     
 }
 .statusOff {
-    background-color: red;
+    background-color: rgb(190, 122, 122);
     margin: 0 10px;
         display: block;
         width: 20px;

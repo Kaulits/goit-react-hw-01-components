@@ -22,8 +22,8 @@ export const FriendItem = ({ avatar, name, isOnline }) => {
         <li className={FriendsStyle.item}>
             <span className={isOnline ? `${FriendsStyle.statusOn}` : `${FriendsStyle.statusOff}`}></span>
   
-  <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+  <img className={FriendsStyle.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={FriendsStyle.name}>{name}</p>
 </li>
     )
 }

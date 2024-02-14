@@ -1,9 +1,23 @@
-export const Statistics = ({title, stats}) => {
-    return (
-        <section class="statistics">
-  <h2 class="title">{title}</h2>
+import StatisticsStyle from './StatisticsStyle.module.css';
 
-  <ul class="stat-list">
+
+function getRandomColor() {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
+const randomColor = getRandomColor();
+
+
+
+export const Statistics = ({ title, stats }) => {
+    return (
+        <section className={StatisticsStyle.statistics}>
+  <h2 className={StatisticsStyle.title}>{title}</h2>
+
+  <ul className={StatisticsStyle.statList}>
           {stats.map(item => {
             return (
        <StatItem
@@ -21,9 +35,9 @@ export const Statistics = ({title, stats}) => {
 
 export const StatItem = ({label, percentage}) => {
   return (
-   <li class="item">
-        <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
+   <li className={StatisticsStyle.item} style={{ backgroundColor: getRandomColor() }}>
+        <span className={StatisticsStyle.label}>{label}</span>
+      <span className={StatisticsStyle.percentage}>{percentage}%</span>
       </li>
   )
 }
