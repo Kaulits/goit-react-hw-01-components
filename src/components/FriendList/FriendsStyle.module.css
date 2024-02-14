@@ -1,0 +1,45 @@
+.status {
+margin: 0 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.statusOn {
+    background-color: green;
+    margin: 0 10px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    
+}
+.statusOff {
+    background-color: red;
+    margin: 0 10px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    
+}
+
+.friendList {
+    list-style: none;
+    margin-left: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.friendList {
+    list-style: none;
+    margin-left: 0;
+}
