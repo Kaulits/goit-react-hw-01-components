@@ -5,7 +5,7 @@ export const Profile = user => {
         <div className={ProfileStyles.profile}>
   <div className={ProfileStyles.description}>
     <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+      src={user.avatar}
       alt="User avatar"
       className={ProfileStyles.avatar}
     />
@@ -15,15 +15,15 @@ export const Profile = user => {
   </div>
 
   <ul className={ProfileStyles.stats}>
-    <li>
+     <li className={ProfileStyles.list}>
       <span className={ProfileStyles.label}>Followers </span>
       <span className={ProfileStyles.quantity}>{user.stats.followers}</span>
     </li>
-    <li>
+     <li className={ProfileStyles.list}>
       <span className={ProfileStyles.label}>Views </span>
       <span className={ProfileStyles.quantity}>{user.stats.views}</span>
     </li>
-    <li>
+     <li className={ProfileStyles.list}>
       <span className={ProfileStyles.label}>Likes </span>
       <span className={ProfileStyles.quantity}>{user.stats.likes}</span>
     </li>
