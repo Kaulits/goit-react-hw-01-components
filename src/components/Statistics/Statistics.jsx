@@ -8,7 +8,6 @@ function getRandomColor() {
   return `rgb(${red}, ${green}, ${blue})`;
 }
 
-const randomColor = getRandomColor();
 
 
 
